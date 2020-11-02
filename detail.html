@@ -43,7 +43,7 @@
 					<div class="col-12">
 						<div class="header__content">
 							<!-- header logo -->
-							<a href="index.html" class="header__logo">
+							<a href="indexmain.html" class="header__logo">
 								<img src="img/logo.svg" alt="">
 							</a>
 							<!-- end header logo -->
@@ -52,35 +52,45 @@
 							<ul class="header__nav">
 								<!-- dropdown -->
 								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+									<a href="indexmain.html" class="header__nav-link">Trang chủ</a>
 
-									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-										<li><a href="index.html">Home slideshow bg</a></li>
-										<li><a href="index2.html">Home static bg</a></li>
-									</ul>
 								</li>
 								<!-- end dropdown -->
 
 								<!-- dropdown -->
 								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mua vé</a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="catalog1.html">Catalog Grid</a></li>
-										<li><a href="catalog2.html">Catalog List</a></li>
-										<li><a href="details1.html">Details Movie</a></li>
-										<li><a href="details2.html">Details TV Series</a></li>
+										<li><a href="#">Mua vé xem phim</a></li>
+										<li><a href="#">Lịch chiếu phim</a></li>
 									</ul>
 								</li>
 								<!-- end dropdown -->
 
 								<li class="header__nav-item">
-									<a href="pricing.html" class="header__nav-link">Pricing Plan</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Rạp chiếu</a>
+                                    
+                                    <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+                                        <li><a href="#">TPHCM</a></li>
+                                        <li><a href="#">Hà Nội</a></li>
+                                        <li><a href="#">ĐB Sông Hồng</a></li>
+                                        <li><a href="#">Đông Bắc, Tây Bắc</a></li>
+                                        <li><a href="#">Bắc Miền Trung</a></li>
+                                        <li><a href="#">Nam Miền Trung</a></li>
+                                        <li><a href="#">Đông Nam Bộ</a></li>
+                                        <li><a href="#">Tây Nam Bộ</a></li>
+                                    </ul>
 								</li>
+                                <li class="header__nav-item">
+									<a href="event.html" class="header__nav-link">Khuyến mãi</a>
 
-								<li class="header__nav-item">
-									<a href="faq.html" class="header__nav-link">Help</a>
-								</li>
+                                    <ul class="dropdown-menu header__dropdown-menu">
+                                        <li><a href="#">Hot event</a></li>
+                                        <li><a href="#">Quà tặng theo phim</a></li>
+                                        <li><a href="#">Sự kiện riêng tạp rạp</a></li>
+                                    </ul>
+                                </li>
 
 								<!-- dropdown -->
 								<li class="dropdown header__nav-item">
@@ -105,7 +115,7 @@
 
 								<a href="signin.html" class="header__sign-in">
 									<i class="icon ion-ios-log-in"></i>
-										<span>sign in</span>
+									<span>Đăng nhập</span>
 								</a>
 							</div>
 							<!-- end header auth -->
@@ -131,7 +141,7 @@
 						<div class="header__search-content">
 							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
 
-							<button type="button">search</button>
+							<button type="button">Tìm kiếm</button>
 						</div>
 					</div>
 				</div>
@@ -139,7 +149,7 @@
 		</form>
 		<!-- end header search -->
 	</header>
-	<!-- end header -->
+    <!-- end header -->
 
 	<!-- details -->
 	<section class="section details">
@@ -410,16 +420,105 @@
 					<div class="details__wrap">
 						<!-- availables -->
 						<div class="details__devices">
-			
 						</div>
 						<!-- end availables -->
 
 						<!-- share -->
 						<div class="details__share">
-							<a href="signin.html" class="header__sign-in">
-								<i class="icon ion-ios-log-in"></i>
-									<span>Đặt vé ngay</span>
-							</a>
+							<!-- filter -->
+							<div class="filter">
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											<div class="filter__content">
+												<div class="filter__items">
+
+													<!-- filter item -->
+													<div class="filter__item" id="filter__quality">
+														<span class="filter__item-label">Rạp</span>
+
+														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<input type="button" value="CGV Cinemas">
+															<span></span>
+														</div>
+
+														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+															<li>CGV Cinemas</li>
+															<li>Galaxy Cinema</li>
+															<li>Lotte Cinema</li>
+															<li>BHD Star Cineplex</li>
+														</ul>
+													</div>
+													<!-- end filter item -->
+
+													<!-- filter item -->
+													<div class="filter__item" id="filter__cinema">
+														<span class="filter__item-label">Địa điểm</span>
+
+														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<input type="button" value="TP. HCM">
+															<span></span>
+														</div>
+
+														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+															<li>TP. HCM</li>
+															<li>Hà Nội</li>
+															<li>An Giang</li>
+															<li>Cần Thơ</li>
+														</ul>
+													</div>
+													<!-- end filter item -->
+
+													<!-- filter item -->
+													<div class="filter__item" id="filter__date">
+														<span class="filter__item-label">Ngày chiếu</span>
+
+														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<input type="button" value="27/10/2020">
+															<span></span>
+														</div>
+
+														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+															<li>27/10/2020</li>
+															<li>28/10/2020</li>
+															<li>29/10/2020</li>
+															<li>30/10/2020</li>
+															<li>31/10/2020</li>
+															<li>1/11/2020</li>
+														</ul>
+													</div>					
+											
+												<!-- end filter item -->
+
+												<!-- filter item -->
+												<div class="filter__item" id="filter__time">
+													<span class="filter__item-label">Suất chiếu</span>
+
+													<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<input type="button" value="7:00 AM">
+														<span></span>
+													</div>
+
+													<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+														<li>7:00 AM</li>
+														<li>8:00 AM</li>
+														<li>8:00 AM</li>
+														<li>10:00 AM</li>
+														<li>11:00 AM</li>
+														<li>12:00 PM</li>
+													</ul>
+												</div>																
+												<!-- end filter item -->
+												
+												<!-- filter btn -->
+												<button class="filter__btn" type="button">Đặt vé ngay</button>
+												<!-- end filter btn -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end filter -->
 						</div>
 						<!-- end share -->
 					</div>
@@ -436,7 +535,7 @@
 			<div class="row">
 				<!-- footer list -->
 				<div class="col-12 col-md-3">
-					<h6 class="footer__title">Download Our App</h6>
+					<h6 class="footer__title">Tải ứng dụng</h6>
 					<ul class="footer__app">
 						<li><a href="#"><img src="img/Download_on_the_App_Store_Badge.svg" alt=""></a></li>
 						<li><a href="#"><img src="img/google-play-badge.png" alt=""></a></li>
@@ -446,31 +545,31 @@
 
 				<!-- footer list -->
 				<div class="col-6 col-sm-4 col-md-3">
-					<h6 class="footer__title">Resources</h6>
+					<h6 class="footer__title">Về chúng tôi</h6>
 					<ul class="footer__list">
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Pricing Plan</a></li>
-						<li><a href="#">Help</a></li>
+						<!-- <li><a href="#">Về chúng tôi</a></li> -->
+						<li><a href="#">Đặt vé</a></li>
+						<li><a href="#">Trợ giúp</a></li>
 					</ul>
 				</div>
 				<!-- end footer list -->
 
 				<!-- footer list -->
 				<div class="col-6 col-sm-4 col-md-3">
-					<h6 class="footer__title">Legal</h6>
+					<h6 class="footer__title">Điều khoản</h6>
 					<ul class="footer__list">
-						<li><a href="#">Terms of Use</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Security</a></li>
+						<li><a href="#">Điều khoản sử dụng</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<!-- <li><a href="#">Security</a></li> -->
 					</ul>
 				</div>
 				<!-- end footer list -->
 
 				<!-- footer list -->
 				<div class="col-12 col-sm-4 col-md-3">
-					<h6 class="footer__title">Contact</h6>
+					<h6 class="footer__title">Kết nối với chúng tôi</h6>
 					<ul class="footer__list">
-						<li><a href="tel:+18002345678">+1 (800) 234-5678</a></li>
+						<li><a href="tel:+18002345678">0123456789</a></li>
 						<li><a href="mailto:support@moviego.com">support@flixgo.com</a></li>
 					</ul>
 					<ul class="footer__social">
@@ -485,11 +584,12 @@
 				<!-- footer copyright -->
 				<div class="col-12">
 					<div class="footer__copyright">
-						<small><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></small>
+						<!-- <small><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></small> -->
+                        <small><a target="_blank" href="https://www.templateshub.net"></a></small>
 
 						<ul>
-							<li><a href="#">Terms of Use</a></li>
-							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Điều khoản sử dụng</a></li>
+							<li><a href="#">Chính sách bảo mật</a></li>
 						</ul>
 					</div>
 				</div>
@@ -497,7 +597,7 @@
 			</div>
 		</div>
 	</footer>
-	<!-- end footer -->
+    <!-- end footer -->
 
 	<!-- Root element of PhotoSwipe. Must have class pswp. -->
 	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

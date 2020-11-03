@@ -97,7 +97,7 @@
 									<a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon ion-ios-more"></i></a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
-										<li><a href="about.html">About</a></li>
+										<li><a href="feedback.html">Phản hồi</a></li>
 										<li><a href="signin.html">Sign In</a></li>
 										<li><a href="signup.html">Sign Up</a></li>
 										<li><a href="404.html">404 Page</a></li>
@@ -418,116 +418,225 @@
 
 				<div class="col-12">
 					<div class="details__wrap">
-						<!-- availables -->
-						<div class="details__devices">
-						</div>
-						<!-- end availables -->
-
-						<!-- share -->
-						<div class="details__share">
-							<!-- filter -->
-							<div class="filter">
-								<div class="container">
-									<div class="row">
-										<div class="col-12">
-											<div class="filter__content">
-												<div class="filter__items">
-
-													<!-- filter item -->
-													<div class="filter__item" id="filter__quality">
-														<span class="filter__item-label">Rạp</span>
-
-														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<input type="button" value="CGV Cinemas">
-															<span></span>
-														</div>
-
-														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
-															<li>CGV Cinemas</li>
-															<li>Galaxy Cinema</li>
-															<li>Lotte Cinema</li>
-															<li>BHD Star Cineplex</li>
-														</ul>
-													</div>
-													<!-- end filter item -->
-
-													<!-- filter item -->
-													<div class="filter__item" id="filter__cinema">
-														<span class="filter__item-label">Địa điểm</span>
-
-														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<input type="button" value="TP. HCM">
-															<span></span>
-														</div>
-
-														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
-															<li>TP. HCM</li>
-															<li>Hà Nội</li>
-															<li>An Giang</li>
-															<li>Cần Thơ</li>
-														</ul>
-													</div>
-													<!-- end filter item -->
-
-													<!-- filter item -->
-													<div class="filter__item" id="filter__date">
-														<span class="filter__item-label">Ngày chiếu</span>
-
-														<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-															<input type="button" value="27/10/2020">
-															<span></span>
-														</div>
-
-														<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
-															<li>27/10/2020</li>
-															<li>28/10/2020</li>
-															<li>29/10/2020</li>
-															<li>30/10/2020</li>
-															<li>31/10/2020</li>
-															<li>1/11/2020</li>
-														</ul>
-													</div>					
-											
-												<!-- end filter item -->
-
+						<!-- filter -->
+						<div class="filter">
+							<div class="container">
+								<div class="row">
+									<div class="col-12">
+										<div class="filter__content">
+											<div class="filter__items">
 												<!-- filter item -->
-												<div class="filter__item" id="filter__time">
-													<span class="filter__item-label">Suất chiếu</span>
+												<div class="filter__item" id="filter__quality">
+													<span class="filter__item-label">Rạp</span>
 
 													<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<input type="button" value="7:00 AM">
+														<input type="button" value="CGV Cinemas">
 														<span></span>
 													</div>
 
 													<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
-														<li>7:00 AM</li>
-														<li>8:00 AM</li>
-														<li>8:00 AM</li>
-														<li>10:00 AM</li>
-														<li>11:00 AM</li>
-														<li>12:00 PM</li>
+														<li>CGV Cinemas</li>
+														<li>Galaxy Cinema</li>
+														<li>Lotte Cinema</li>
+														<li>BHD Star Cineplex</li>
 													</ul>
-												</div>																
+												</div>
 												<!-- end filter item -->
-												
-												<!-- filter btn -->
-												<button class="filter__btn" type="button">Đặt vé ngay</button>
-												<!-- end filter btn -->
-											</div>
+
+												<!-- filter item -->
+												<div class="filter__item" id="filter__cinema">
+													<span class="filter__item-label">Địa điểm</span>
+
+													<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<input type="button" value="TP. HCM">
+														<span></span>
+													</div>
+
+													<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+														<li>TP. HCM</li>
+														<li>Hà Nội</li>
+														<li>An Giang</li>
+														<li>Cần Thơ</li>
+													</ul>
+												</div>
+												<!-- end filter item -->
+
+												<!-- filter item -->
+												<div class="filter__item" id="filter__date">
+													<span class="filter__item-label">Ngày chiếu</span>
+
+													<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<input type="button" value="27/10/2020">
+														<span></span>
+													</div>
+
+													<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+														<li>27/10/2020</li>
+														<li>28/10/2020</li>
+														<li>29/10/2020</li>
+														<li>30/10/2020</li>
+														<li>31/10/2020</li>
+														<li>1/11/2020</li>
+													</ul>
+												</div>					
+										
+											<!-- end filter item -->
+
+											<!-- filter item -->
+											<div class="filter__item" id="filter__time">
+												<span class="filter__item-label">Suất chiếu</span>
+
+												<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<input type="button" value="7:00 AM">
+													<span></span>
+												</div>
+
+												<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+													<li>7:00 AM</li>
+													<li>8:00 AM</li>
+													<li>8:00 AM</li>
+													<li>10:00 AM</li>
+													<li>11:00 AM</li>
+													<li>12:00 PM</li>
+												</ul>
+											</div>																
+											<!-- end filter item -->
+
+											<!-- filter item -->
+											<div class="filter__item" id="filter__number">
+												<span class="filter__item-label">Số vé</span>
+
+												<div class="filter__item-btn dropdown-toggle" role="navigation" id="filter-quality" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<input type="button" value="1">
+													<span></span>
+												</div>
+
+												<ul class="filter__item-menu dropdown-menu scrollbar-dropdown" aria-labelledby="filter-quality">
+													<li>1</li>
+													<li>2</li>
+													<li>3</li>
+													<li>4</li>
+													<li>5</li>
+													<li>6</li>
+												</ul>
+											</div>																
+											<!-- end filter item -->
+											
+											<!-- filter btn -->
+											<button class="filter__btn" type="button">Đặt vé ngay</button>
+											<!-- end filter btn -->
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- end filter -->
 						</div>
-						<!-- end share -->
-					</div>
+						<!-- end filter -->
 				</div>
 			</div>
 		</div>
 		<!-- end details content -->
 	</section>
 	<!-- end details -->
+
+	<!-- content -->
+	<section class="content">
+		<div class="content__head">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+
+						<!-- content tabs nav -->
+						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Đánh giá</a>
+							</li>
+						</ul>
+						<!-- end content tabs nav -->
+
+						<!-- content mobile tabs nav -->
+						<div class="content__mobile-tabs" id="content__mobile-tabs">
+							<div class="content__mobile-tabs-btn dropdown-toggle" role="navigation" id="mobile-tabs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<input type="button" value="Comments">
+								<span></span>
+							</div>
+
+							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- end content mobile tabs nav -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 col-xl-8">
+					<!-- content tabs -->
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="1-tab">
+							<div class="row">
+								<!-- reviews -->
+								<div class="col-12">
+									<div class="reviews">
+										<ul class="reviews__list">
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="img/user.png" alt="">
+													<span class="reviews__name">Best Marvel movie in my opinion</span>
+													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>8.4</span>
+												</div>
+												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+											</li>
+
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="img/user.png" alt="">
+													<span class="reviews__name">Best Marvel movie in my opinion</span>
+													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>9.0</span>
+												</div>
+												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+											</li>
+
+											<li class="reviews__item">
+												<div class="reviews__autor">
+													<img class="reviews__avatar" src="img/user.png" alt="">
+													<span class="reviews__name">Best Marvel movie in my opinion</span>
+													<span class="reviews__time">24.08.2018, 17:53 by John Doe</span>
+
+													<span class="reviews__rating"><i class="icon ion-ios-star"></i>7.5</span>
+												</div>
+												<p class="reviews__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+											</li>
+										</ul>
+
+										<form action="#" class="form">
+											<input type="text" class="form__input" placeholder="Title">
+											<textarea class="form__textarea" placeholder="Review"></textarea>
+											<div class="form__slider">
+												<div class="form__slider-rating" id="slider__rating"></div>
+												<div class="form__slider-value" id="form__slider-value"></div>
+											</div>
+											<button type="button" class="form__btn">Send</button>
+										</form>
+									</div>
+								</div>
+								<!-- end reviews -->
+							</div>
+						</div>
+					</div>
+					<!-- end content tabs -->
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- footer -->
 	<footer class="footer">

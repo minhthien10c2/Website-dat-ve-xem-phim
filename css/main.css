@@ -224,23 +224,25 @@ ul {
   background-color: #2b2b31;
   z-index: 101;
 }
+
 .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  padding: 0 15px;
-  background-color: #28282d;
-  width: 140px;
-}
-.header__logo img {
+  max-width: 100%;
   width: auto;
-  max-width: 110px;
-  display: block;
+  color: #fff;
+  font-size: 30px;
 }
+
+
 .header__logo:hover {
-  background-color: #2b2b31;
+  color: #fff;
 }
+
+.header__logo span {
+  font-size: 50px;
+  font-weight: 900;
+  color: #ff55a5;
+}
+
 .header__nav {
   display: flex;
   flex-direction: column;
@@ -3874,16 +3876,28 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -webkit-box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
   box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
 }
-.sign__logo {
+.sign__title {
   margin-bottom: 40px;
 }
-.sign__logo a {
+
+.sign__title {
   max-width: 100%;
   width: auto;
+  color: #fff;
+  font-size: 30px;
 }
-.sign__logo img {
-  max-width: 172px;
+
+
+.sign__title:hover {
+  color: #fff;
 }
+
+.sign__title span {
+  font-size: 50px;
+  font-weight: 900;
+  color: #ff55a5;
+}
+
 .sign__input {
   background-color: #2b2b31;
   border: none;
